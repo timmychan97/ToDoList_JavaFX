@@ -1,0 +1,10 @@
+.check-box {
+    -fx-label-padding: 0 0 0 0;
+}
+
+.check-box > .box {
+    -fx-padding: 5px;
+}
+.check-box > .box > .mark {
+    -fx-padding: 5px;
+}

@@ -2,15 +2,19 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane fx:id="listItem" prefHeight="50.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListItem">
+<AnchorPane fx:id="listItem" prefHeight="50.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListItemController">
    <children>
-      <Pane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #192;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #192;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <CheckBox contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="5.0" layoutY="5.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" selected="true" stylesheets="@style.css" />
+         </children></Pane>
       <TextField fx:id="textField" layoutX="61.0" layoutY="13.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="5.0" />
       <Button layoutX="230.0" layoutY="13.0" mnemonicParsing="false" onAction="#Destroy" prefWidth="44.0" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
          <graphic>
